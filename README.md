@@ -85,8 +85,8 @@ ANDROID_NDK_HOME    bazel-tensorflow    configure.py.bkp   README.md
 user@host $ cd ${TENSORFLOW_SOURCE_DIR}
 user@host $  ./configure
 user@host $  # ... or whatever options you used here
-user@host $ bazel build -c opt --copt=-mfpmath=both --copt=-msse4.2 --config=cuda //tensorflow:libtensorflow.so
-user@host $ bazel build -c opt --copt=-mfpmath=both --copt=-msse4.2 --config=cuda //tensorflow:libtensorflow_cc.so
+user@host $ bazel build -c opt --copt=-mfpmath=both --copt=-msse4.2 //tensorflow:libtensorflow.so
+user@host $ bazel build -c opt --copt=-mfpmath=both --copt=-msse4.2 //tensorflow:libtensorflow_cc.so
 
 user@host $ export TENSORFLOW_BUILD_DIR=/tensorflow_dist
 user@host $ mkdir ${TENSORFLOW_BUILD_DIR}
